@@ -2,7 +2,7 @@ import React, { useRef, useState, useContext } from "react";
 import TaskList from "./TaskList";
 import { TaskContext } from "../context/TaskContext";
 
-function SearchBar() {
+function SearchBar({tasks}) {
   const [query, setQuery] = useState("");
 
   function handleSearch(e) {
